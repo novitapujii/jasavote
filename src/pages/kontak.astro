@@ -2,112 +2,127 @@
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 ---
 
-<DefaultLayout>
+<DefaultLayout title="Hubungi Jasa Vote | Kontak Admin Resmi" description="Hubungi layanan Jasa Vote untuk konsultasi kompetisi, polling, dan peningkatan interaksi sosial media Anda. Fast response 24 jam.">
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Hubungi Jasa Vote</h1>
+      <p class="subtitle">Konsultasikan kebutuhan campaign, kontes, polling, dan jasa vote Anda bersama tim ahli kami. Kami siap melayani 24 jam penuh.</p>
 
-  <section class="contact-page">
+      <div class="contact-grid">
+        <div class="contact-card wa">
+          <div class="icon">💬</div>
+          <h3>WhatsApp</h3>
+          <p>Fast response dan siap melayani konsultasi mendesak 24 jam.</p>
+          <a href="https://wa.me/6289634740308?text=hallo%20admin%20saya%20mau%20jasa%20vote" target="_blank" rel="noopener noreferrer" class="btn-contact">Chat Sekarang</a>
+        </div>
 
-    <h1>
-      Hubungi Jasa Vote Aman, Cepat, dan Terpercaya
-    </h1>
+        <div class="contact-card tg">
+          <div class="icon">✈️</div>
+          <h3>Telegram</h3>
+          <p>Alternatif komunikasi cepat, aman, dan fleksibel.</p>
+          <a href="#" class="btn-contact">Buka Telegram</a>
+        </div>
 
-    <p class="contact-intro">
-      Konsultasikan kebutuhan campaign, kontes, polling,
-      dan jasa vote Anda bersama tim kami.
-    </p>
-
-
-    <div class="contact-grid">
-
-      <!-- whatsapp -->
-
-      <div class="contact-card">
-
-        <h3>WhatsApp</h3>
-
-        <p>
-          Fast response 24 jam.
-        </p>
-
-        <a
-          href="https://wa.me/628xxxxxxxxxx"
-          target="_blank"
-        >
-          Chat Sekarang
-        </a>
-
+        <div class="contact-card mail">
+          <div class="icon">✉️</div>
+          <h3>Email</h3>
+          <p>Untuk kebutuhan bisnis, kerja sama jangka panjang, dan partnership.</p>
+          <a href="mailto:support@jasavote.my.id" class="btn-contact">Kirim Email</a>
+        </div>
       </div>
 
-
-
-      <!-- telegram -->
-
-      <div class="contact-card">
-
-        <h3>Telegram</h3>
-
-        <p>
-          Konsultasi cepat dan fleksibel.
-        </p>
-
-        <a href="#">
-          Buka Telegram
-        </a>
-
+      <div class="info-box">
+        <h3>⏰ Jam Operasional</h3>
+        <p>Senin - Minggu: <strong>24 Jam Nonstop</strong></p>
+        <p><em>Butuh Respon Cepat? Silakan klik tombol WhatsApp untuk langsung terhubung dengan admin yang sedang bertugas.</em></p>
       </div>
-
-
-
-      <!-- email -->
-
-      <div class="contact-card">
-
-        <h3>Email</h3>
-
-        <p>
-          Untuk kebutuhan bisnis dan partnership.
-        </p>
-
-        <a href="mailto:admin@email.com">
-          Kirim Email
-        </a>
-
-      </div>
-
     </div>
-
-
-
-    <!-- jam operasional -->
-
-    <div class="business-hours">
-
-      <h2>Jam Operasional</h2>
-
-      <p>
-        Senin - Minggu • 24 Jam
-      </p>
-
-    </div>
-
-
-
-    <!-- CTA -->
-
-    <section class="contact-cta">
-
-      <h2>
-        Butuh Respon Cepat?
-      </h2>
-
-      <a
-        href="https://wa.me/6289634740308"
-        target="_blank"
-      >
-        Hubungi Admin Sekarang
-      </a>
-
-    </section>
-
   </section>
+</htmlLayout>
 
-</DefaultLayout>
+<style>
+  .contact-section {
+    padding: 60px 20px;
+    background: #f8fafc;
+    min-height: 70vh;
+  }
+  .contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .subtitle {
+    text-align: center;
+    color: #475569;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  .contact-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s;
+  }
+  .contact-card:hover {
+    transform: translateY(-5px);
+  }
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  .contact-card h3 {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+  }
+  .contact-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  .btn-contact {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .contact-card.wa .btn-contact { background: #22c55e; }
+  .contact-card.wa .btn-contact:hover { background: #16a34a; }
+  .contact-card.tg .btn-contact { background: #0ea5e9; }
+  .contact-card.tg .btn-contact:hover { background: #0284c7; }
+  .contact-card.mail .btn-contact { background: #64748b; }
+  .contact-card.mail .btn-contact:hover { background: #475569; }
+  
+  .info-box {
+    background: #e0f2fe;
+    border-left: 5px solid #0284c7;
+    padding: 25px;
+    border-radius: 0 12px 12px 0;
+    color: #0369a1;
+  }
+  .info-box h3 { margin-bottom: 8px; font-size: 1.2rem; }
+  .info-box p { font-size: 0.95rem; line-height: 1.5; }
+</style>
+
