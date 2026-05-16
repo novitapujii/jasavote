@@ -58,8 +58,8 @@ const { page } = Astro.props as Props;
               <div class="blog-image">
 
                 <img
-                  src={post.frontmatter.image}
-                  alt={post.frontmatter.title}
+                  src={post.data.image}
+                  alt={post.data.title}
                 />
 
               </div>
@@ -67,19 +67,19 @@ const { page } = Astro.props as Props;
               <div class="blog-content">
 
                 <span class="blog-category">
-                  {post.frontmatter.category}
+                  {post.data.category}
                 </span>
 
-                <a href={post.url}>
-                  <h2>{post.frontmatter.title}</h2>
+                <a href={`/blog/${post.id}`}>
+                  <h2>{post.data.title}</h2>
                 </a>
 
                 <p>
-                  {post.frontmatter.description}
+                  {post.data.description}
                 </p>
 
                 <div class="blog-meta">
-                  {post.frontmatter.date}
+                  {post.data.date}
                 </div>
 
               </div>
@@ -104,18 +104,18 @@ const { page } = Astro.props as Props;
               <div class="recent-post">
 
                 <img
-                  src={post.frontmatter.image}
-                  alt={post.frontmatter.title}
+                  src={post.data.image}
+                  alt={post.data.title}
                 />
 
                 <div>
 
-                  <a href={post.url}>
-                    {post.frontmatter.title}
+                  <a href={`/blog/${post.id}`}>
+                    {post.data.title}
                   </a>
 
                   <span>
-                    {post.frontmatter.date}
+                    {post.data.date}
                   </span>
 
                 </div>
