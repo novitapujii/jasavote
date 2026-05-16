@@ -220,9 +220,76 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 </DefaultLayout>
 
 <style>
+
+.hero {
+  padding: 100px 20px;
+  background: #eef2ff;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: #111827;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background: #22c55e;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 16px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 24px;
+}
+
 .seo-content {
-  padding: 80px 20px;
-  background: #fff;
+  padding: 100px 20px;
+  background: white;
 }
 
 .seo-content .container {
@@ -231,50 +298,70 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 }
 
 .seo-content h2 {
-  font-size: 34px;
-  margin-bottom: 20px;
-  margin-top: 50px;
+  font-size: 42px;
+  line-height: 1.3;
+  margin-top: 60px;
+  margin-bottom: 25px;
   color: #111827;
 }
 
 .seo-content h3 {
-  font-size: 24px;
-  margin-top: 35px;
-  margin-bottom: 15px;
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   color: #2563eb;
 }
 
 .seo-content p {
-  font-size: 18px;
-  line-height: 1.9;
+  font-size: 19px;
+  line-height: 2;
   color: #4b5563;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .seo-content ul {
-  padding-left: 20px;
-  margin-bottom: 25px;
+  padding-left: 24px;
+  margin-bottom: 30px;
 }
 
 .seo-content li {
   font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 10px;
+  line-height: 1.9;
+  margin-bottom: 12px;
   color: #4b5563;
 }
 
 @media (max-width: 768px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
   .seo-content h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .seo-content h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .seo-content p,
   .seo-content li {
     font-size: 16px;
   }
+
 }
+
 </style>
