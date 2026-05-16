@@ -1,0 +1,12 @@
+---
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+const { frontmatter } = Astro.props;
+---
+<DefaultLayout title={frontmatter.title} description={frontmatter.description}>
+  <article class="max-w-3xl mx-auto py-20 px-6 prose prose-slate">
+    <h1 class="text-4xl font-black mb-8">{frontmatter.title}</h1>
+    
+    <slot /> 
+    
+  </article>
+</Layout>

@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+// Menangkap properti title dan description (dengan nilai default untuk jaga-jaga)
+const { 
+  title = "Jasa Vote Aman & Cepat | Terpercaya 100%", 
+  description = "Layanan jasa vote, polling, dan like terbaik. Aman, proses cepat, dan bergaransi untuk membantu Anda memenangkan kontes secara natural." 
+} = Astro.props;
+---
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- ================= SEO TAGS PENTING ================= -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    
+    <!-- (Opsional) Tempat untuk Favicon -->
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+  </head>
+
+  <body>
+
+    <Navbar />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer />
+
+  </body>
+</html>
