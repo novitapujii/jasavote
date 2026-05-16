@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-# Beritahu Google lokasi sitemap utamamu secara tegas
 Sitemap: https://jasavote.my.id/sitemap-index.xml
-
-
