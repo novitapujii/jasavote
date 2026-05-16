@@ -1,107 +1,96 @@
+/* =========================
+   RESET
+========================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+   BODY
+========================= */
+
 body {
   font-family: Arial, sans-serif;
-  
-  /* Gradasi memutar: dari putih terang ke ungu-biru yang lebih kuat */
-  background: radial-gradient(circle at 20% 20%, #ffffff 0%, #e0e7ff 50%, #b8c6ff 100%) !important; 
-  
+
+  background:
+    radial-gradient(circle at 20% 20%, #ffffff 0%, #e0e7ff 50%, #b8c6ff 100%);
+
   color: #111;
+
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
+
+  overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* =========================
+   MAIN
+========================= */
+
+main {
+  flex: 1;
+}
+
+/* =========================
+   NAVBAR
+========================= */
 
 nav {
   position: relative;
-  z-index: 100;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 100;
 
   height: 80px;
 
-  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background: white;
 
   border-bottom: 1px solid #e5e7eb;
+
+  padding: 0 30px;
 }
 
-@media (max-width: 768px) 
-
-  header {
-    padding: 14px 18px;
-  }
-
-  .navbar,
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .logo img {
-    width: 110px;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 14px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    flex-wrap: wrap;
-  }
-
-  nav ul li a {
-    font-size: 15px;
-  }
-
-}
-
-
-/* LOGO */
+/* =========================
+   LOGO
+========================= */
 
 .logo {
   position: absolute;
 
-  left: 60px;
+  left: 30px;
 
   top: 50%;
 
   transform: translateY(-50%);
 }
 
-
 .logo img {
+  width: 120px;
+
+  height: auto;
+
   display: block;
-
-  height: 200px;
-
-  width: auto;
-
-  object-fit: contain;
 }
 
-
-/* MENU */
+/* =========================
+   MENU
+========================= */
 
 .menu {
   display: flex;
 
-  gap: 40px;
-}
+  align-items: center;
 
+  gap: 32px;
+}
 
 .menu a {
   text-decoration: none;
@@ -109,176 +98,171 @@ nav {
   color: #111;
 
   font-weight: 600;
-}
 
+  transition: 0.3s;
+}
 
 .menu a:hover {
   color: #2563eb;
 }
 
-
-/* MENU */
-
-.menu {
-  display: flex;
-
-  gap: 40px;
-}
-
-
-.menu a {
-  color: #111;
-
-  text-decoration: none;
-
-  font-weight: 600;
-
-  transition: .3s;
-}
-
-
-.menu a:hover {
-  color: #2563eb;
-}
-
-
-/* menu tengah */
-
-.menu {
-  position: absolute;
-
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  display: flex;
-
-  gap: 30px;
-}
-
-
-.menu a {
-  color: #111;
-
-  text-decoration: none;
-
-  font-weight: 600;
-}
-
-
-/* MAIN */
-
-main {
-  flex: 1;
-}
-
-
-/* FOOTER */
-
-footer {
-  background: #111;
-
-  color: white;
-
-  padding: 20px 60px;
-}
-
-
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-  height: 75vh;
-  background-image: url("/images/hero-jasavote.png"); /* Gambar aman di sini! */
-  background-size: cover;
-  background-position: center;
   position: relative;
+
+  height: 75vh;
+
+  background-image: url("/images/hero-jasavote.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  overflow: hidden;
 }
 
 /* overlay */
+
 .hero::before {
   content: "";
+
   position: absolute;
+
   inset: 0;
-  background: rgba(0,0,0,.60);
+
+  background: rgba(0, 0, 0, 0.60);
 }
 
-/* text overlay */
+/* HERO CONTENT */
+
 .hero-content {
   position: absolute;
+
   inset: 0;
+
   z-index: 2;
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
+
   text-align: center;
+
   color: white;
-  
-  /* POSISI DINAIKKAN KE ATAS (Dari -30px menjadi -80px) */
-  transform: translateY(-80px); 
-  
-  /* Agar teks rapi ke tengah dan tidak melebar full layar */
+
   max-width: 900px;
-  margin: 0 auto;
+
+  margin: auto;
+
   padding: 0 20px;
+
+  transform: translateY(-40px);
 }
 
-/* Ukuran teks untuk PC/Laptop (Lebih besar & tebal) */
 .hero-content h1 {
-  font-size: 46px; 
-  font-weight: bold;
+  font-size: 52px;
+
+  line-height: 1.2;
+
   margin-bottom: 20px;
-  line-height: 1.3;
+
+  font-weight: 800;
 }
 
 .hero-content p {
-  font-size: 18px; 
-  line-height: 1.6;
+  font-size: 20px;
+
+  line-height: 1.8;
 }
 
-/* Ukuran teks kembali mengecil untuk layar HP */
-@media (max-width: 768px) {
-  .hero-content {
-    transform: translateY(-40px); /* Di HP jangan terlalu naik ke atas */
-  }
-  .hero-content h1 {
-    font-size: 28px; /* Sama seperti kodemu sebelumnya */
-  }
-  .hero-content p {
-    font-size: 15px; /* Sama seperti kodemu sebelumnya */
-  }
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #111827;
+
+  color: white;
+
+  padding: 60px 30px;
 }
 
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
+
+  /* NAVBAR */
+
+  nav {
+    height: auto;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    padding: 20px;
+  }
+
+  .logo {
+    position: static;
+
+    transform: none;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .menu {
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 15px;
+  }
+
+  /* HERO */
 
   .hero {
-    padding: 80px 20px;
-    text-align: center;
+    height: 85vh;
+
+    background-position: center;
   }
 
-  .hero-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  .hero-content {
+    transform: none;
+
+    padding: 0 24px;
   }
 
-  .hero h1 {
-    font-size: 42px;
-    line-height: 1.2;
+  .hero-content h1 {
+    font-size: 38px;
+
+    line-height: 1.3;
   }
 
-  .hero p {
+  .hero-content p {
     font-size: 17px;
+
     line-height: 1.8;
   }
 
-  .hero-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .hero-image img {
-    max-width: 100%;
-  }
+}
 
   
 /* ================= PLATFORM SLIDER ================= */
