@@ -1,3 +1,6 @@
+# `src/pages/vote-instagram.astro`
+
+```astro
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 ---
@@ -70,4 +73,298 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
     <div class="feature-grid">
 
       <div class="feature-card">
+        <h3>100% Aman</h3>
+        <p>Proses aman menggunakan metode natural dan berkualitas.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Proses Cepat</h3>
+        <p>Vote diproses cepat dan stabil sesuai kebutuhan.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Support 24 Jam</h3>
+        <p>Admin siap membantu konsultasi dan pemesanan kapan saja.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="vote-steps">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Cara Order</h2>
+    </div>
+
+    <div class="steps-grid">
+
+      <div class="step-card">
+        <span>01</span>
+        <h3>Kirim Link</h3>
+        <p>Kirim link postingan atau kontes Instagram.</p>
+      </div>
+
+      <div class="step-card">
+        <span>02</span>
+        <h3>Pilih Paket</h3>
+        <p>Tentukan jumlah vote sesuai kebutuhan Anda.</p>
+      </div>
+
+      <div class="step-card">
+        <span>03</span>
+        <h3>Proses Vote</h3>
+        <p>Admin langsung memproses vote dengan cepat.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="vote-cta">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <h2>Siap Menang Kontes Instagram?</h2>
+
+      <p>
+        Konsultasikan kebutuhan vote Instagram Anda sekarang juga.
+      </p>
+
+      <a
+        href="https://wa.me/6281234567890"
+        class="cta-button"
+        target="_blank"
+      >
+        Hubungi Admin
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="vote-faq" id="faq">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>FAQ</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <details>
+        <summary>Apakah vote aman?</summary>
+        <p>Ya, proses dilakukan dengan metode aman dan berkualitas.</p>
+      </details>
+
+      <details>
+        <summary>Berapa lama proses vote?</summary>
+        <p>Proses menyesuaikan jumlah order dan tingkat kesulitan.</p>
+      </details>
+
+      <details>
+        <summary>Apakah bisa order mendadak?</summary>
+        <p>Bisa, admin siap membantu kebutuhan vote cepat.</p>
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
 </DefaultLayout>
+
+<style>
+.container {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.vote-hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #eef4ff, #dfe9ff);
+}
+
+.vote-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 60px;
+}
+
+.vote-hero-content h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.vote-hero-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.badge {
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary,
+.btn-secondary,
+.cta-button {
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary,
+.cta-button {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-secondary {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.vote-hero-image img {
+  width: 100%;
+}
+
+.vote-features,
+.vote-steps,
+.vote-faq {
+  padding: 100px 0;
+}
+
+.feature-grid,
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature-card,
+.step-card {
+  background: white;
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.step-card span {
+  width: 55px;
+  height: 55px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.vote-cta {
+  padding: 100px 0;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  padding: 70px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.cta-box h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.cta-box p {
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-list details {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.faq-list p {
+  margin-top: 15px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+  .vote-hero-grid,
+  .feature-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vote-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .cta-box {
+    padding: 40px 25px;
+  }
+
+  .cta-box h2 {
+    font-size: 34px;
+  }
+
+}
+</style>
+```
