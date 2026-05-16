@@ -58,42 +58,46 @@
     <div class="footer-social">
 
   <a href="#">
-    <img src="/instagram.svg" alt="Instagram" />
+    <img src="/instagram.svg" alt="Instagram" loading="lazy" />
   </a>
 
   <a href="#">
-    <img src="/tiktok.svg" alt="TikTok" />
+    <img src="/tiktok.svg" alt="TikTok" loading="lazy" />
   </a>
 
   <a href="#">
-    <img src="/telegram.svg" alt="Telegram" />
+    <img src="/telegram.svg" alt="Telegram" loading="lazy" />
   </a>
 
   <a href="#">
-    <img src="/whatsapp.svg" alt="WhatsApp" />
+    <img src="/whatsapp.svg" alt="WhatsApp" loading="lazy" />
   </a>
 
 </div>
 
+<style>
 .footer-social {
   display: flex;
   gap: 14px;
   margin-top: 20px;
 }
 
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-social img {
   width: 34px;
   height: 34px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .footer-social img:hover {
   transform: scale(1.1);
 }
 </style>
-
-<style>
-
 
   <div class="footer-bottom">
 
