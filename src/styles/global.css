@@ -852,6 +852,22 @@ footer {
   width: fit-content;
 }
 
+.footer-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.footer-social img {
+  width: 34px;
+  height: 34px;
+  transition: 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
 
 /* copyright */
 .footer-bottom {
