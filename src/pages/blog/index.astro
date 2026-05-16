@@ -41,7 +41,7 @@ const posts = await getCollection("blog");
                 {post.data.category}
               </span>
 
-              <a href={`/blog/${post.slug}`}>
+              <a href={`/blog/${post.id}`}>
                 <h2>{post.data.title}</h2>
               </a>
 
@@ -77,7 +77,7 @@ const posts = await getCollection("blog");
 
               <div>
 
-                <a href={`/blog/${post.slug}`}>
+                <a href={`/blog/${post.id}`}>
                   {post.data.title}
                 </a>
 

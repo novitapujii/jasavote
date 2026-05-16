@@ -1,8 +1,7 @@
 ---
 import DefaultLayout from "@layouts/DefaultLayout.astro";
 import { getCollection } from "astro:content";
-
-// Generate semua slug artikel
+//
 export async function getStaticPaths() {
 
   const posts = await getCollection<any>("blog");
