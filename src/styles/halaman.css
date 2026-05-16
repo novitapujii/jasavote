@@ -1,0 +1,92 @@
+/* ===================================================
+   CSS KHUSUS HALAMAN DALAM (halaman.css)
+   Digunakan bersama untuk semua sub-halaman JasaVote
+====================================================== */
+
+/* 1. KONTEN UTAMA (Bungkus Halaman) */
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* 2. AREA HEADERS (Judul Halaman) */
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.page-header .meta-info {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* 3. TIPOGRAFI ISI KONTEN (Agar Tulisan Enak Dibaca) */
+.page-body {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  border: 1px solid #e2e8f0;
+}
+
+.page-body h2 {
+  font-size: 26px;
+  color: #0f172a;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.page-body p {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Style untuk List/Poin Edukasi */
+.page-body ul {
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.page-body li {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* ===================================================
+   SISTEM RESPONSIF HP (Otomatis Menyesuaikan Layar)
+====================================================== */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 40px 15px;
+  }
+  
+  .page-header h1 {
+    font-size: 30px; /* Ukuran judul mengecil di HP agar muat */
+  }
+
+  .page-body {
+    padding: 25px 20px; /* Padding dalam kotak mengecil di HP */
+    border-radius: 16px;
+  }
+  
+  .page-body h2 {
+    font-size: 22px;
+  }
+}
+
+
