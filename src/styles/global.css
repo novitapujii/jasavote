@@ -35,6 +35,40 @@ nav {
   border-bottom: 1px solid #e5e7eb;
 }
 
+@media (max-width: 768px) 
+
+  header {
+    padding: 14px 18px;
+  }
+
+  .navbar,
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    width: 110px;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+}
+
 
 /* LOGO */
 
