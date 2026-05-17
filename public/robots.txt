@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jasavote.my.id/sitemap-0.xml
+Sitemap: https://jasavote.my.id/sitemap-index.xml
